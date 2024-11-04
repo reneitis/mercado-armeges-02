@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCADO ARMEGES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3ffa06ba97.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="img/carrinho.png" type="image/x-icon">
+    <link rel="stylesheet" href="/estilizacao/style_hortifruti.css"> <!-- Vinculação do CSS externo -->
+</head>
+
+<header>
+    <h2>
+        <a href="index.html" class="logo">
+            <img src="img/logotipo.png" alt="" id="imglogo">
+        </a>
+    </h2>    
+    <div class="navegacao">
+        <!-- <a href="#inicio">INÍCIO</a>
+        <a href="#produtos">PRODUTOS E DELIVERY</a>
+        <a href="#ajuda">AJUDA</a> -->
+
+    <form>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass" style="padding: 15px; color: #c4323d; "></i>
+          <input class="search-input" type="search" placeholder="Pesquise por produtos">
+        </div>
+    </form>
+    </div>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-user" style="color: #c42d3c; padding: 5px"></i>
+        Entrar
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Entre</a></li>
+        <li><a class="dropdown-item" href="#">Cadastrar-se</a></li>
+      </ul>
+    </div>
+    <div class="carrinho"></div>
+      <button class="btnCarrinho" type="button">
+        <i class="fa-solid fa-cart-shopping" style="color: #f2c30e; padding: 5px;"></i>
+      </button>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Hortifruti Fresh</h1>
+        <p>Selecione os produtos que deseja adicionar ao seu carrinho!</p>
+
+        <div class="produtos">
+            <div class="produto">
+                <img src="img/maca.png" alt="Maçã" class="produto-img" id="img1"> <!-- Insira o link da imagem -->
+                <h2 style="color: #c4323d
+                ">Maçã (100g)</h2>
+                <p>R$ 2.50</p>
+                <label>
+                    <input type="checkbox" name="produto" value="Maçã"> Adicionar ao carrinho
+                </label>
+            </div>
+            <div class="produto">
+                <img src="img/banana.png" alt="Maçã" class="produto-img" id="img1"> <!-- Insira o link da imagem -->
+                <h2 style="color: #c42d3c;" >Banana (100g)</h2>
+                <p>R$ 1.20</p>
+                <label>
+                    <input type="checkbox" name="produto" value="Maçã"> Adicionar ao carrinho
+                </label> 
+            </div>
+            <div class="produto">
+                <img src="img/uva.png" alt="Uva" class="produto-img" id="img3"> <!-- Insira o link da imagem -->
+                <h2 style="color: #c42d3c;">Uva (100g)</h2>
+                <p>R$ 3.00</p>
+                <label>
+                    <input type="checkbox" name="produto" value="Uva"> Adicionar ao carrinho
+                </label>
+            </div>
+            <div class="produto">
+                <img src="img/laranja.png" alt="Laranja" class="produto-img" id="img4"> <!-- Insira o link da imagem -->
+                <h2 style="color: #c42d3c;">Laranja (100g)</h2>
+                <p>R$ 2.00</p>
+                <label>
+                    <input type="checkbox" name="produto" value="Laranja"> Adicionar ao carrinho
+                </label>
+            </div>
+            <div class="produto">
+                <img src="img/morango.png" alt="Morango" class="produto-img" id="img5"> <!-- Insira o link da imagem -->
+                <h2 style="color: #c42d3c">Morango (100g)</h2>
+                <p>R$ 4.50</p>
+                <label>
+                    <input type="checkbox" name="produto" value="Morango"> Adicionar ao carrinho
+                </label>
+            </div>
+            <div class="produto">
+                <img src="img/kiwi.png" alt="Kiwi" class="produto-img" id="img6"> <!-- Insira o link da imagem -->
+                <h2 style="color: #c42d3c;">Kiwi (100g)</h2>
+                <p>R$ 5.00</p>
+                <label>
+                    <input type="checkbox" name="produto" value="Kiwi"> Adicionar ao carrinho
+                </label>
+            </div>
+        </div>
+
+        <button id="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>ARMEGES
+            </h3>
+    
+            <p class="footer-links">
+                <a href="#sobre">INSTITUCIONAL</a>
+                |
+                <a href="#projetos">CATEGORIAS</a>
+                |
+                <a href="#atuacao">TERMOS BUSCADOS</a>
+                |
+                <a href="#servicos">CENTRAL DE ATENDIMENTO</a>
+            </p>
+    
+            <p class="footer-company-name"> 2024 |<strong> ARMEGES </strong></p>
+        </div>
+    
+        <div class="footer-center">
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>FALE CONOSCO</span>
+                NÚMERO DE TELEFONE: (11) 000000-00
+                ENDEREÇO: RUA FULANO, BAIRRO CICLANO - NÚMERO TAL.
+            </p>
+            <div class="footer-icons">
+              <div class="icones">
+                <div class="media-icons">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+        </div>
+      </footer>
+    
+    
+    <script src="./hortifruti.js"></script>
+</body>
+</html>
